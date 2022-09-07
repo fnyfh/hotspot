@@ -52,10 +52,10 @@ code {
 }
 
 #bottom-menu {
-    background: url(../img/ellips.PNG);
-    float: left;
-    /* height: 100px; */
-    /* color: #fff; */
+    background: url(../img/1.jpeg);
+    padding: 100px 0px;
+    height: 100px;
+    color: #fff;
 }
 
 #bottom-menu .mylogo {
