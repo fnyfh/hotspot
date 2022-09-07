@@ -52,15 +52,14 @@ code {
 }
 
 #bottom-menu {
-    background: url(../img/1.jpeg);
-    padding: 10px 0px;
-    height: 100px;
-    color: #fff;
+    background: url(../img/ellips.PNG);
+    float: left;
+    /* height: 100px; */
+    /* color: #fff; */
 }
 
 #bottom-menu .mylogo {
     width: 100px;
-    float: left;
 }
 
 #bottom-menu .textlogo {
