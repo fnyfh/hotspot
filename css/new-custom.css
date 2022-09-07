@@ -36,3 +36,14 @@
     background-color: #EEDDB8;
     border-radius: 50%;
 }
+
+.new-logo-horison {
+    height: 162px;
+}
+
+/* CUstome height and with logo */
+@media (max-width: 768px) {
+    .new-logo-horison {
+        height: 102px;
+    }
+}
