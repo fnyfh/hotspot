@@ -26,3 +26,13 @@
     border-radius: 10px;
     margin-top: 8px;
 }
+
+.new-decor-circle {
+    position: absolute;
+    height: 280px;
+    width: 280px;
+    left: -105px;
+    top: -100px;
+    background-color: #EEDDB8;
+    border-radius: 50%;
+}
