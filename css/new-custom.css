@@ -1,4 +1,28 @@
 .new-navbar-inverse {
-    background-color: #3D3D3D !important;
-    border-color: #3D3D3D !important;
+    background-color: #3D3D3D;
+    border-color: #3D3D3D;
+}
+
+.new-text-white {
+    color: #FFFFFF;
+}
+
+.new-fw-bolder {
+    font-weight: bolder;
+}
+
+/* For navigation bar active */
+.new-navigation li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.new-navigation .active a {
+    background-color: #000000;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    margin-top: 8px;
 }
