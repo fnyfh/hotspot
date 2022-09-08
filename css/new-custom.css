@@ -38,12 +38,51 @@
 }
 
 .new-logo-horison {
-    height: 162px;
+    height: 150px;
+}
+
+.new-over-size {
+    height: 373px;
+}
+
+.new-mt-130 {
+    margin-top: 130px;
+}
+
+.new-mt-50 {
+    margin-top: 50px;
+}
+
+.new-mt-10 {
+    margin-top: 10px;
+}
+
+.new-pt-130 {
+    padding-top: 5rem;
+}
+
+.new-padding-25 {
+    padding-left: 5rem;
+    padding-right: 7rem;
+}
+
+.new-big-label {
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #636363;
+}
+
+.new-medium-label {
+    font-size: 24px;
+    text-align: justify;
 }
 
 /* CUstome height and with logo */
 @media (max-width: 768px) {
     .new-logo-horison {
         height: 102px;
+    }
+
+    .new-over-size {
+        height: 200px;
     }
 }
