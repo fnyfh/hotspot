@@ -9,6 +9,10 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/new-custom.css" rel="stylesheet">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="plugin/OwlCarousel2/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugin/OwlCarousel2/owlcarousel/assets/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -78,113 +82,147 @@
             <label for="" class="new-big-label new-mt-50">Our Promo</label>
         </div>
 
-        <div class="container">
-            <div class="col-md-6 col-sm-12">
+        <!-- promo card -->
+        <div class="owl-carousel owl-theme new-mt-50">
+            <div class="item" style="width: 200px;">
+                <img src="img/v2/5.svg" alt="">
+            </div>
+            <div class="item" style="width: 200px;">
+                <img src="img/v2/3.svg" alt="">
+            </div>
+            <div class="item" style="width: 200px;">
+                <img src="img/v2/2.svg" alt="">
+            </div>
+            <div class="item" style="width: 200px;">
+                <img src="img/v2/1.svg" alt="">
+            </div>
+            <div class="item" style="width: 200px;">
+                <img src="img/v2/4.svg" alt="">
+            </div>
+        </div>
 
-                <div class="row">
-                    $(if error)
-                    <div class="alert alert-danger">$(error)</div>
-                    $(endif)
+        <!-- membuat Line Decor -->
+        <div class="new-line-decor new-mt-100">
+            <div class="new-line-decor-circle"></div>
+            <div class="new-line-decor-rectangle"></div>
+            <div class="new-line-decor-circle"></div>
+            <div class="new-line-decor-rectangle"></div>
+            <div class="new-line-decor-circle"></div>
+        </div>
 
-                    <div class="alert alert-info">Selamat Datang di Hotspot Horison Tasikmalaya</div>
-
-                    $(if trial == 'yes')
-                    <div class="alert alert-info">
-                        Silahkan Masukan Username dan Password. <a
-                            href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"></a>
-                    </div>
-                    $(endif)
-                </div>
-
-                <div class="row">
-                    <div class="panel panel-default">
-
-                        <div class="panel-body">
-
-                            <form id="loginForm" class="form-horizontal" role="form" action="$(link-login-only)"
-                                method="post">
+        <!-- MEMBUAT FORM LOGIN -->
+        <div class="container-fluid p-0">
+            <div class="row new-mt-130">
+                <div class="col-md-6">
+                    <div class="new-card">
+                        <div class="new-card-body">
+                            <label for="title" class="new-big-label">LOGIN</label>
+                            <form id="loginForm" class="form-horizontal" role="form" action="$(link-login-only)"method="post">
                                 <input type="hidden" name="dst" value="$(link-orig)" />
                                 <input type="hidden" name="popup" value="true" />
-
-                                <div class="form-group">
-                                    <label for="inputLogin" class="col-sm-2 control-label">Username</label>
-
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control input-lg" id="inputLogin" name="username"
-                                            placeholder="Login" autofocus required>
-                                    </div>
+            
+                                <div class="form-group new-mt-50">
+                                    <input type="text" class="form-control input-lg" id="inputLogin" name="username" placeholder="Login" autofocus required>
                                 </div>
+            
                                 <div class="form-group">
-                                    <label for="inputPassword" class="col-sm-2 control-label">Password</label>
-
-                                    <div class="col-sm-10">
-                                        <input type="password" class="form-control input-lg" id="inputPassword"
-                                            name="password" placeholder="Password" required>
-                                    </div>
+                                    <input type="password" class="form-control input-lg" id="inputPassword" name="password" placeholder="Password" required>
                                 </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <button type="submit" class="btn btn-primary btn-block btn-lg">OK</button>
-                                    </div>
+            
+                                <div class="form-group new-mt-50">
+                                    <button type="submit" class="btn new-btn-primary new-fw-bolder btn-block btn-lg">LOGIN</button>
                                 </div>
                             </form>
                         </div>
-
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-6 col-sm-12">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-
-                        <div class="card hovercard">
-                            <div class="cardheader">
-                            </div>
-                            <div class="avatar">
-                                <img alt="" src="img/logo2.png">
-                            </div>
-                            <div class="info">
-                                <div class="title">
-                                    <font color=red> Horison Tasikmalaya Hotspot
-                                </div>
-                                <div class="desc">Created by IT Horison Tasikmalaya </div>
-                                <div class="desc">it.tasikmalaya@horisonhotels.com</a></div>
-                                <div class="desc">Supported by <a
-                                        href="https://booking.myhorison.com/destination/tasikmalaya">https://booking.myhorison.com/destination/tasikmalaya</a>
-                                </div>
-                                <div class="desc">
-                                    <blink>Your IP Address : $(ip)<br>Your Mac Address : $(mac)</blink>
-                                </div>
-                            </div>
-                            <div class="bottom">
-                                <a class="btn btn-primary btn-sm" rel="publisher" href="https://www.facebook.com/"><i
-                                        class="fa fa-facebook"></i></a>
-                                <a class="btn btn-danger btn-sm" rel="publisher" href="https://plus.google.com/"><i
-                                        class="fa fa-google-plus"></i></a>
-                                <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/"><i
-                                        class="fa fa-twitter"></i></a>
-                            </div>
+                <div class="col-md-6">
+                    <div class="new-card" style="margin-left:40px; margin-right:40px;">
+                        <div class="new-card-body" style="padding: 30px; text-align:left;">
+                            <label for="title" class="new-big-label">Horison Tasikmalaya</label>
+                            <p class="new-medium-label">Hotspot</p>
                         </div>
+                    </div>
 
+                    <div class="new-card new-mt-15" style="background-color: #D9D9D9 !important; margin-left:40px; margin-right:40px;">
+                        <div class="new-card-body" style="padding: 15px; text-align:left;">
+                            <label for="title" class="new-medium-label">Your IP Address : </label>
+                            <span style="font-size: 24px;">$(ip)</span>
+                        </div>
+                    </div>
+
+                    <div class="new-card new-mt-15" style="background-color: #D9D9D9 !important; margin-left:40px; margin-right:40px;">
+                        <div class="new-card-body" style="padding: 15px; text-align:left;">
+                            <label for="title" class="new-medium-label">Your MAC Address : </label>
+                            <span style="font-size: 24px;">$(mac)</span>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-left:40px; margin-right:40px;">
+                        $(if error)
+                        <div class="alert alert-danger">$(error)</div>
+                        $(endif)
+
+                        <div class="alert alert-info">Selamat Datang di Hotspot Horison Tasikmalaya</div>
+
+                        $(if trial == 'yes')
+                        <div class="alert alert-info">
+                            Silahkan Masukan Username dan Password. <a
+                                href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"></a>
+                        </div>
+                        $(endif)
+                    </div>
+
+                    <!-- membuat Line Decor -->
+                    <div class="new-line-decor new-mt-100">
+                        <div class="new-line-decor-circle"></div>
+                        <div class="new-line-decor-rectangle"></div>
+                        <div class="new-line-decor-circle"></div>
+                        <div class="new-line-decor-rectangle"></div>
+                        <div class="new-line-decor-circle"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="footer">
-        <div class="container">
-            <p class="text-muted">
-
-                © Copyright<a href="https://booking.myhorison.com/destination/tasikmalaya/"> Horison Tasikmalaya
-                    2017</a></p>
+        <!-- MEMBUAT FOOTER -->
+        <div class="container p-0">
+            <div class="row new-footer new-mt-132" style="padding: 35px;">
+                <div class="col-md-6">
+                    <img src="img/v2/logo.svg" alt="" width="50%">
+                    <br>
+                    <label for="title" class="new-medium-label new-mt-50">Horison Tasikmalaya</label>
+                    <span style="font-size: 24px;"> Hotspot</span>
+                    <br>
+                    <span style="font-size: 24px;">Created by</span>
+                    <label for="title" class="new-medium-label">IT Horison Tasikmalaya</label>
+                </div>
+    
+                <div class="col-md-6 new-mt-100" style="text-align: right;">
+                    <span style="font-size: 20px;">it.tasikmalaya@horisonhotels.com</span>
+                    <br>
+                    <label for="title" class="new-medium-label">Supported by</label>
+                    <a class="text-dark" href="https://booking.myhorison.com/destination/tasikmalaya"><span style="font-size: 20px;">https://booking.myhorison.com/ <br> destination/tasikmalaya</span></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="footer" style="text-align: center; display:flex; align-items: center; justify-content: center;">
+            <p class="text-dark new-mt-10 new-fw-bolder" >
+                © Copyright
+                <a class="text-dark" href="https://booking.myhorison.com/destination/tasikmalaya/"> Horison Tasikmalaya 2022</a></p>
         </div>
     </div>
+
+    
 
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="plugin/OwlCarousel2/owlcarousel/owl.carousel.js"></script>
 
     $(if chap-id)
     <script type="text/javascript" src="md5.js"></script>
@@ -195,6 +233,29 @@
         });
     </script>
     $(endif)
+
+    <!-- OWL CAROUSEL SETUP -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:20,
+            nav:false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoWidth: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    </script>
 
 </body>
 

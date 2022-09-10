@@ -84,8 +84,16 @@ body{
     margin-top: 50px;
 }
 
+.new-mt-10 {
+    margin-top: 10px;
+}
+
 .new-mt-15 {
     margin-top: 15px;
+}
+
+.new-mt-100 {
+    margin-top: 100px;
 }
 
 .new-mt-132 {
@@ -111,7 +119,32 @@ body{
     text-align: justify;
 }
 
-/* CAROUSEL */
+/* CARD LOGIN */
+.new-card {
+    background-color: #EEDDB8;
+    border-radius: 10px;
+}
+
+.new-card .new-card-body {
+    padding: 10rem;
+    text-align: center;
+}
+
+.new-btn-primary {
+    background-color: #DCBB71;
+}
+
+.new-footer {
+    background-color: #EEDDB8;
+}
+
+.text-dark {
+    color: #000000;
+}
+
+.p-0 {
+    padding: 0px !important;
+}
 
 /* CUstome height and with logo */
 @media (max-width: 768px) {
