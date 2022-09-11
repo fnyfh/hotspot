@@ -156,13 +156,38 @@ body {
     padding: 0px !important;
 }
 
+.mx-ms-4 {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 /* CUstome height and with logo */
 @media (max-width: 768px) {
+    .new-big-label {
+        font-size: 30px;
+    }
+
+    .mt-ms-5 {
+        margin-top: 5rem;
+    }
+
+    .mx-ms-4 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
     .new-logo-horison {
         height: 102px;
     }
 
     .new-over-size {
         height: 200px;
+    }
+
+    .new-card .new-card-body {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 }
