@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="plugin/OwlCarousel2/owlcarousel/assets/owl.theme.default.min.css">
 </head>
 
-<body>
+<body style="overflow-x: hidden !important;">
     <!-- Decoration circle -->
     <div class="new-decor-circle"></div>
     <div id="wrap">
@@ -58,11 +58,11 @@
                 <div class="col-md-6 new-padding-25">
                     <label for="" class="new-big-label new-mt-15">Iconic</label>
                     <p class="new-medium-label">Is the most iconic hotel in Tasikmalaya,
-                        Horison Tasikmalaya is suitable hotel for 
+                        Horison Tasikmalaya is suitable hotel for
                         your Business & Leisure plan.</p>
                     <label for="" class="new-big-label new-mt-50">Service</label>
-                    <p class="new-medium-label">Sit back and let our team ensuring that all you 
-                        Business Meeting either your Vacation Reservation 
+                    <p class="new-medium-label">Sit back and let our team ensuring that all you
+                        Business Meeting either your Vacation Reservation
                         is well prepared.</p>
                 </div>
             </div>
@@ -111,26 +111,30 @@
         </div>
 
         <!-- MEMBUAT FORM LOGIN -->
-        <div class="container-fluid p-0">
+        <div class="container-fluid">
             <div class="row new-mt-130">
                 <div class="col-md-6">
                     <div class="new-card">
                         <div class="new-card-body">
                             <label for="title" class="new-big-label">LOGIN</label>
-                            <form id="loginForm" class="form-horizontal" role="form" action="$(link-login-only)"method="post">
+                            <form id="loginForm" class="form-horizontal" role="form" action="$(link-login-only)"
+                                method="post">
                                 <input type="hidden" name="dst" value="$(link-orig)" />
                                 <input type="hidden" name="popup" value="true" />
-            
+
                                 <div class="form-group new-mt-50">
-                                    <input type="text" class="form-control input-lg" id="inputLogin" name="username" placeholder="Login" autofocus required>
+                                    <input type="text" class="form-control input-lg" id="inputLogin" name="username"
+                                        placeholder="Login" autofocus required>
                                 </div>
-            
+
                                 <div class="form-group">
-                                    <input type="password" class="form-control input-lg" id="inputPassword" name="password" placeholder="Password" required>
+                                    <input type="password" class="form-control input-lg" id="inputPassword"
+                                        name="password" placeholder="Password" required>
                                 </div>
-            
+
                                 <div class="form-group new-mt-50">
-                                    <button type="submit" class="btn new-btn-primary new-fw-bolder btn-block btn-lg">LOGIN</button>
+                                    <button type="submit"
+                                        class="btn new-btn-primary new-fw-bolder btn-block btn-lg">LOGIN</button>
                                 </div>
                             </form>
                         </div>
@@ -140,19 +144,21 @@
                 <div class="col-md-6">
                     <div class="new-card" style="margin-left:40px; margin-right:40px;">
                         <div class="new-card-body" style="padding: 30px; text-align:left;">
-                            <label for="title" class="new-big-label">Horison Tasikmalaya</label>
+                            <label for="title" class="new-medium-30-label">Horison Tasikmalaya</label>
                             <p class="new-medium-label">Hotspot</p>
                         </div>
                     </div>
 
-                    <div class="new-card new-mt-15" style="background-color: #D9D9D9 !important; margin-left:40px; margin-right:40px;">
+                    <div class="new-card new-mt-15"
+                        style="background-color: #D9D9D9 !important; margin-left:40px; margin-right:40px;">
                         <div class="new-card-body" style="padding: 15px; text-align:left;">
                             <label for="title" class="new-medium-label">Your IP Address : </label>
                             <span style="font-size: 24px;">$(ip)</span>
                         </div>
                     </div>
 
-                    <div class="new-card new-mt-15" style="background-color: #D9D9D9 !important; margin-left:40px; margin-right:40px;">
+                    <div class="new-card new-mt-15"
+                        style="background-color: #D9D9D9 !important; margin-left:40px; margin-right:40px;">
                         <div class="new-card-body" style="padding: 15px; text-align:left;">
                             <label for="title" class="new-medium-label">Your MAC Address : </label>
                             <span style="font-size: 24px;">$(mac)</span>
@@ -187,7 +193,7 @@
         </div>
 
         <!-- MEMBUAT FOOTER -->
-        <div class="container p-0">
+        <div class="container-fluid">
             <div class="row new-footer new-mt-132" style="padding: 35px;">
                 <div class="col-md-6">
                     <img src="img/v2/logo.svg" alt="" width="50%">
@@ -198,24 +204,31 @@
                     <span style="font-size: 24px;">Created by</span>
                     <label for="title" class="new-medium-label">IT Horison Tasikmalaya</label>
                 </div>
-    
+
                 <div class="col-md-6 new-mt-100" style="text-align: right;">
                     <span style="font-size: 20px;">it.tasikmalaya@horisonhotels.com</span>
                     <br>
                     <label for="title" class="new-medium-label">Supported by</label>
-                    <a class="text-dark" href="https://booking.myhorison.com/destination/tasikmalaya"><span style="font-size: 20px;">https://booking.myhorison.com/ <br> destination/tasikmalaya</span></a>
-                    
+                    <a class="text-dark" href="https://booking.myhorison.com/destination/tasikmalaya">
+                        <span style="font-size: 20px;">
+                            https://booking.myhorison.com/ <br>
+                            destination/tasikmalaya
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
+
         <div id="footer" style="text-align: center; display:flex; align-items: center; justify-content: center;">
-            <p class="text-dark new-mt-10 new-fw-bolder" >
+            <p class="text-dark new-mt-10 new-fw-bolder">
                 © Copyright
-                <a class="text-dark" href="https://booking.myhorison.com/destination/tasikmalaya/"> Horison Tasikmalaya 2022</a></p>
+                <a class="text-dark" href="https://booking.myhorison.com/destination/tasikmalaya/"> Horison Tasikmalaya
+                    2022</a>
+            </p>
         </div>
     </div>
 
-    
+
 
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -237,21 +250,21 @@
     <!-- OWL CAROUSEL SETUP -->
     <script>
         $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:20,
-            nav:false,
+            loop: true,
+            margin: 20,
+            nav: false,
             autoplay: true,
             autoplayTimeout: 5000,
             autoWidth: true,
-            responsive:{
-                0:{
-                    items:1
+            responsive: {
+                0: {
+                    items: 1
                 },
-                600:{
-                    items:3
+                600: {
+                    items: 3
                 },
-                1000:{
-                    items:3
+                1000: {
+                    items: 3
                 }
             }
         })

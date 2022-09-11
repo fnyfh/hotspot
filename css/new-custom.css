@@ -1,11 +1,16 @@
-@font-face /*perintah untuk memanggil font eksternal*/
-  {
-    font-family: 'Gisha'; /*memberikan nama bebas untuk font*/
-    src: url('fonts/gisha/gisha.ttf');/*memanggil file font eksternalnya di folder nexa*/
-  }
+@font-face
 
-body{
+/*perintah untuk memanggil font eksternal*/
+    {
+    font-family: 'Gisha';
+    /*memberikan nama bebas untuk font*/
+    src: url('fonts/gisha/gisha.ttf');
+    /*memanggil file font eksternalnya di folder nexa*/
+}
+
+body {
     font-family: "Gisha";
+    overflow-x: hidden;
 }
 
 .new-navbar-inverse {
@@ -111,6 +116,11 @@ body{
 
 .new-big-label {
     font-size: 40px;
+    text-shadow: 2px 2px 4px #636363;
+}
+
+.new-medium-30-label {
+    font-size: 30px;
     text-shadow: 2px 2px 4px #636363;
 }
 
