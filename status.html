@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Hotspot Horison Tasikmalaya | Status</title>
     <meta charset="utf-8">
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="plugin/OwlCarousel2/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="plugin/OwlCarousel2/owlcarousel/assets/owl.theme.default.min.css">
 
-	<!-- <script>
+    <!-- <script>
         setTimeout(function(){
         // location.href = './status';
         location.href = 'https://myhorison.com';
@@ -21,6 +22,7 @@
       },1000)
     </script> -->
 </head>
+
 <body style="overflow-x: hidden !important;">
     <div class="new-decor-circle"></div>
     <div id="wrap">
@@ -42,8 +44,8 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right new-navigation">
-                        <li><a href="login" class="new-text-white">Login</a></li>
-                        <li class="active"><a href="status" class="new-text-white">Status</a></li>
+                        <li><a href="login.html" class="new-text-white">Login</a></li>
+                        <li class="active"><a href="status.html" class="new-text-white">Status</a></li>
                         <li><a href="logout?erase-cookie=true" class="new-text-white">Logout</a></li>
                     </ul>
                 </div>
@@ -130,50 +132,51 @@
                             <br>
                             <table class="table table-striped new-mt-50">
                                 <tbody>
-                                <tr>
-                                    <td>Username</td>
-                                    <td>$(username)</td>
-                                </tr>
-                                <tr>
-                                    <td>IP Address:</td>
-                                    <td>$(ip)</td>
-                                </tr>
-                                <tr>
-                                    <td>MAC Address</td>
-                                    <td>$(mac)</td>
-                                </tr>
-                                <tr>
-                                    <td>Quota Remaining:</td>
-                                    <td>$(if limit-bytes-out) <script language=javascript>result = $(limit-bytes-out)/1000 
-                                        document.write(result)</script> Kib
-                                        $(endif)
-                                        $(if limit-bytes-out == '')Unlimited$(endif)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Session Time:</td>
-                                    <td>$(session-timeout)$(if session-timeout == '')Unlimited$(endif)</td>
-                                </tr>
-                                <tr>
-                                    <td>Bytes Up / Down</td>
-                                    <td>$(bytes-in-nice) / $(bytes-out-nice)</td>
-                                </tr>
+                                    <tr>
+                                        <td>Username</td>
+                                        <td>$(username)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IP Address:</td>
+                                        <td>$(ip)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MAC Address</td>
+                                        <td>$(mac)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quota Remaining:</td>
+                                        <td>$(if limit-bytes-out)
+                                            <script language=javascript>result = $(limit - bytes - out) / 1000
+                                                document.write(result)</script> Kib
+                                            $(endif)
+                                            $(if limit-bytes-out == '')Unlimited$(endif)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Session Time:</td>
+                                        <td>$(session-timeout)$(if session-timeout == '')Unlimited$(endif)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bytes Up / Down</td>
+                                        <td>$(bytes-in-nice) / $(bytes-out-nice)</td>
+                                    </tr>
                                     $(if session-time-left)
-                                <tr>
-                                    <td>Connected / Left:</td>
-                                    <td>$(uptime) / $(session-time-left)</td>
-                                </tr>
+                                    <tr>
+                                        <td>Connected / Left:</td>
+                                        <td>$(uptime) / $(session-time-left)</td>
+                                    </tr>
                                     $(else)
-                                <tr>
-                                    <td>Connected:</td>
-                                    <td>$(uptime)</td>
-                                </tr>
+                                    <tr>
+                                        <td>Connected:</td>
+                                        <td>$(uptime)</td>
+                                    </tr>
                                     $(endif)
                                     $(if refresh-timeout)
-                                <tr>
-                                    <td>Status Refresh</td>
-                                    <td>$(refresh-timeout)</td>
-                                    $(endif)
+                                    <tr>
+                                        <td>Status Refresh</td>
+                                        <td>$(refresh-timeout)</td>
+                                        $(endif)
                                 </tbody>
                             </table>
                         </div>
@@ -205,13 +208,13 @@
 
                         <div class="row" style="margin-left:5px; margin-right:5px;">
                             $(if error)
-                                <div class="alert alert-danger">$(error)</div>
+                            <div class="alert alert-danger">$(error)</div>
                             $(endif)
 
                             $(if login-by == 'trial')
-                                <div class="alert alert-info">Selamat Datang di Hotspot Horison Tasikmalaya</div>
+                            <div class="alert alert-info">Selamat Datang di Hotspot Horison Tasikmalaya</div>
                             $(elif login-by != 'mac')
-                                <div class="alert alert-info">Selamat Datang $(username)!</div>
+                            <div class="alert alert-info">Selamat Datang $(username)!</div>
                             $(endif)
                         </div>
 
@@ -258,42 +261,43 @@
 
 
 
-<div id="footer" style="text-align: center; display:flex; align-items: center; justify-content: center;">
-    <p class="text-dark new-mt-10 new-fw-bolder">
-        © Copyright
-        <a class="text-dark" href="https://booking.myhorison.com/destination/tasikmalaya/"> Horison Tasikmalaya
-            2022</a>
-    </p>
-</div>
+    <div id="footer" style="text-align: center; display:flex; align-items: center; justify-content: center;">
+        <p class="text-dark new-mt-10 new-fw-bolder">
+            © Copyright
+            <a class="text-dark" href="https://booking.myhorison.com/destination/tasikmalaya/"> Horison Tasikmalaya
+                2022</a>
+        </p>
+    </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-<!-- OWL CAROUSEL -->
-<script src="plugin/OwlCarousel2/owlcarousel/owl.carousel.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="plugin/OwlCarousel2/owlcarousel/owl.carousel.js"></script>
 
-<!-- OWL CAROUSEL SETUP -->
-<script>
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 20,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoWidth: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 3
+    <!-- OWL CAROUSEL SETUP -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoWidth: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
             }
-        }
-    })
-</script>
+        })
+    </script>
 
 </body>
+
 </html>
