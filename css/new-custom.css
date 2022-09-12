@@ -129,6 +129,10 @@ body {
     text-align: justify;
 }
 
+.new-medium-label-2 {
+    font-size: 20px;
+}
+
 /* CARD LOGIN */
 .new-card {
     background-color: #EEDDB8;
@@ -146,6 +150,10 @@ body {
 
 .new-footer {
     background-color: #EEDDB8;
+}
+
+.new-align-text {
+    text-align: right;
 }
 
 .text-dark {
@@ -190,4 +198,17 @@ body {
         padding-left: 5rem;
         padding-right: 5rem;
     }
+
+    .new-footer {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .new-align-text {
+        text-align: center;
+    }
+
+    /* .new-footer .new-footer-logo {
+        width: 768px;
+    } */
 }
